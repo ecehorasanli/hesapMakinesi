@@ -1,0 +1,58 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Times New Roman", Times, serif;
+        border: 0px;
+        grid-column-gap: 7px;
+	grid-row-gap: 7px;
+    }
+
+    body {
+        background-image: url("hesap.jpg");
+    }
+
+    .calculator {
+        max-width: 400px;
+        margin: 0px auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        
+    }
+
+    .screen {
+        background-color: #a9a9a9;
+        height: 70px;
+        grid-column: 1/5;
+        padding: 5px 10px 5px 10px;
+        font-size: 3rem;
+        color: #ffffff;
+        box-sizing: border-box;
+        text-align: left;
+        border-radius: 30px;
+
+    }
+
+    button {
+        padding: 15px;
+        font-size: 1.25rem;
+        color: #000000;
+        border: 1px solid #dddddd;
+        border-radius: 30px;
+    }
+
+    #equals {
+        grid-column: 1/2;
+        grid-row: 3/7;
+        background-color: #00ee00;
+    }
+    #clear{
+        background-color: #ff0000;
+    }
+
+    button:hover {
+        background-color: #696969;
+    }
